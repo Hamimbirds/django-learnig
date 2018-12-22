@@ -1,0 +1,19 @@
+{% extends 'master.html' %}
+{% block title%}Django life server{% endblock%}
+
+{%block body%}
+</br><br><br>
+<div class ="container">
+        <div class ="row">
+            <div class ="col-md-7">
+                {{last_vedio.title}}  
+            </div>
+        
+            <div class ="col-md-5">
+                    <h2>{{last_vedio.embed_code|safe}} </h2>
+            </div>
+        
+            </div>
+        
+        </div>
+{% endblock%}
